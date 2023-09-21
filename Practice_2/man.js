@@ -1,0 +1,12 @@
+import Human from "./human";
+class Man extends Human{
+    constructor(name, age, weight){
+        super(name, age, weight, 'male');
+    }
+    greeting()
+    {
+        console.log(`${super.greeting()} My name ${this.name}. I'm ${this.age} years old.`)
+    }
+}
+
+export default Man;
