@@ -1,4 +1,4 @@
-import Human from "./human";
+import Human from "./human.js";
 
 class Woman extends Human{
     constructor(name, age, weight){

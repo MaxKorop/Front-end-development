@@ -1,5 +1,5 @@
-import Man from "./man";
-import Woman from "./woman";
+import Man from "./man.js";
+import Woman from "./woman.js";
 
 const people = [];
 for (let i = 0; i < 15; i++) {
@@ -7,7 +7,7 @@ for (let i = 0; i < 15; i++) {
   const age = Math.floor(Math.random() * 40) + 20;
   const weight = Math.floor(Math.random() * 80) + 30;
 
-  if (i % 2 == 0) people.push(new Man(name, age, weight));
+  if (!(i % 2)) people.push(new Man(name, age, weight));
   else people.push(new Woman(name, age, weight));
 }
 

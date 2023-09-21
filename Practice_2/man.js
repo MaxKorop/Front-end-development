@@ -1,4 +1,4 @@
-import Human from "./human";
+import Human from "./human.js";
 class Man extends Human{
     constructor(name, age, weight){
         super(name, age, weight, 'male');

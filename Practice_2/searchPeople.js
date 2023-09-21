@@ -1,4 +1,4 @@
-import people from "./array";
+import people from "./array.js";
 
 function searchPeople(list, searchField, searchValue) {
     return new Promise((resolve, reject) => {
@@ -9,15 +9,13 @@ function searchPeople(list, searchField, searchValue) {
       }, 2000);
     });
   }
-  
-let a = searchPeople(people, "age", 45)
-    .then((results) => {
+
+searchPeople(people, "age", 45)
+  .then((results) => {
     console.log("Результати пошуку:", results);
-    })
-    .catch((error) => {
+  })
+  .catch((error) => {
     console.error("Помилка:", error);
-    });
+  })
 
-console.log(a)
-
-export default a;
+export default searchPeople;
